@@ -1,0 +1,122 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form {
+  
+   
+    display: flex;
+        justify-content: center;
+        align-items: center;  
+        gap: 12px;
+        margin: 20px auto;
+}
+/*
+.form input {
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    width: 272px;
+    height: 40px;
+}
+*/
+.form input[type="text"] {
+    box-sizing: border-box;
+    width: 272px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form input[type="text"]:hover {
+    border-color: #0056b3;
+}
+
+.form input[type="text"]:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.form button {
+
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 8px;
+        padding-block: 8px;
+        padding-inline: 16px;
+        width: 91px;
+        height: 40px;
+
+        padding-block: 8px;
+        padding-inline: 16px;
+        width: 91px;
+        height: 40px;
+        background: #4e75ff;
+}
+
+    .form button:hover {
+            background: #6c8cff;
+        }
+.loader {
+    display: none;
+    /* прихований з самого старту */
+    text-align: center;
+    margin: 20px auto;
+}
+
+.loader.visible {
+    display: block;
+    /* показуємо тільки під час завантаження */
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #ccc;
+    border-top-color: #4e75ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-text {
+    font-size: 16px;
+    color: #333;
+}
