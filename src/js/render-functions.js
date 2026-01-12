@@ -41,3 +41,11 @@ export function hideLoader() {
     loader.classList.remove("visible");
     loader.setAttribute("aria-hidden", "true");
 }
+
+const loadMoreBtn = document.querySelector(".load-more");
+export function showLoadMoreButton() {
+  loadMoreBtn.style.display = "block";
+  
+}
+export function hideLoadMoreButton()
+{ loadMoreBtn.style.display = "none"; }

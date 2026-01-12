@@ -90,14 +90,14 @@ display: flex;
         }
 .loader {
     display: none;
-    /* прихований з самого старту */
+   
     text-align: center;
     margin: 20px auto;
 }
 
 .loader.visible {
     display: block;
-    /* показуємо тільки під час завантаження */
+    
 }
 
 .spinner {
@@ -119,4 +119,30 @@ display: flex;
 .loader-text {
     font-size: 16px;
     color: #333;
+}
+
+.load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 8px;
+    padding-block: 8px;
+    padding-inline: 16px;
+    width: 125px;
+    height: 40px;
+    background: #4e75ff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 20px auto;
+}
+
+.load-more:hover {
+    background: #3b5edb;
+   
 }
